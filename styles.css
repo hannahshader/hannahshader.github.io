@@ -1,0 +1,36 @@
+/**
+ * @Author: Hannah Shader
+ * @Date:   2024-01-17 17:46:39
+ * @Last Modified by:   Hannah Shader
+ * @Last Modified time: 2024-01-17 17:58:30
+ */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.image-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    padding: 5px;
+}
