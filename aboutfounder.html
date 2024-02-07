@@ -2,7 +2,7 @@
   @Author: Hannah Shader
   @Date:   2024-02-06 17:18:14
   @Last Modified by:   Hannah Shader
-  @Last Modified time: 2024-02-06 19:23:37
+  @Last Modified time: 2024-02-06 19:31:40
 -->
 <html lang="en">
 <head>
@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cupcake Store</title>
     <style>
+
         body {
             background-image: url("images/background.jpg");
             background-size: cover;
@@ -104,6 +105,18 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .logo {
+            width: 100%; 
+            max-width: 300px; 
+            height: auto; 
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                max-width: 150px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -113,7 +126,7 @@
         <a href="aboutfounder.html">About Us</a>
     </div>
     <div style="text-align: center;">
-        <img src="images/logo.png" alt="Logo" style="margin: 20px auto; display: block;">
+        <img src="images/logo.png" class="logo" alt="Logo" style="margin: 20px auto; display: block;">
     </div>
     <h1 style="text-align: center;"> About Our Founder </h>
     <p style="text-align: center;"> Jonatan is a baker passionate about the culinary arts. Born in Stockholm, Sweden, Jonatan quit his job at a local McDonald's to go to pastry school and has never looked back. </p>

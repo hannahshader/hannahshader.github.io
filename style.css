@@ -2,7 +2,7 @@
  * @Author: Hannah Shader
  * @Date:   2024-02-06 17:22:29
  * @Last Modified by:   Hannah Shader
- * @Last Modified time: 2024-02-06 18:39:47
+ * @Last Modified time: 2024-02-06 19:30:34
  */
 body {
     background-image: url("images/background.jpg");
@@ -98,4 +98,16 @@ input {
 
 a:hover {
     text-decoration: underline;
+}
+
+.logo {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 150px;
+    }
 }
