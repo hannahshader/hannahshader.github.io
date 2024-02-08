@@ -2,7 +2,7 @@
  * @Author: Hannah Shader
  * @Date:   2024-02-06 17:22:29
  * @Last Modified by:   Hannah Shader
- * @Last Modified time: 2024-02-06 19:30:34
+ * @Last Modified time: 2024-02-08 12:20:19
  */
 body {
     background-image: url("images/background.jpg");
@@ -44,6 +44,7 @@ li {
 }
 
 .navbar a:hover {
+    position: fixed;
     background-color: #ddd;
     color: black;
 }
@@ -104,6 +105,7 @@ a:hover {
     width: 100%; 
     max-width: 300px; 
     height: auto; 
+    position: fixed;
 }
 
 @media (max-width: 600px) {
