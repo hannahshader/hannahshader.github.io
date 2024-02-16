@@ -2,7 +2,7 @@
  * @Author: Hannah Shader
  * @Date:   2024-02-15 01:03:26
  * @Last Modified by:   Hannah Shader
- * @Last Modified time: 2024-02-16 16:18:29
+ * @Last Modified time: 2024-02-16 16:40:55
  */
 
 const PRICE_HOTDOG = 4.65;
@@ -10,7 +10,7 @@ const PRICE_FRIES = 3.75;
 const PRICE_SODA = 1.89;
 
 function showMoney(amount) {
-     let preciseAmount = (Math.round(amount * 100) / 100).toString();
+    let preciseAmount = (Math.round(amount * 100) / 100).toString();
 
     let parts = preciseAmount.split('.');
     let whole = parts[0];
