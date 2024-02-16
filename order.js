@@ -2,7 +2,7 @@
  * @Author: Hannah Shader
  * @Date:   2024-02-15 01:03:26
  * @Last Modified by:   Hannah Shader
- * @Last Modified time: 2024-02-16 14:29:24
+ * @Last Modified time: 2024-02-16 14:35:56
  */
 
 const PRICE_HOTDOG = 4.65;
@@ -15,7 +15,23 @@ function showMoney(amount) {
     if (difference >= 0.005) {
         rounded += 0.01;
     }
-    return rounded.toFixed(2);
+
+    let result = rounded.toString();
+    let decimalIndex = result.indexOf('.');
+    if (decimalIndex === -1) {
+        // If no decimal, add two zeros after the decimal 
+        result += '.00';
+    } else {
+        // Get number of digits after the decimal
+        let decimalPartLength = result.length - decimalIndex - 1;
+        if (decimalPartLength === 1) {
+            // If there's only one digit after the decimal, add one zero
+            result += '0';
+        } else if (decimalPartLength === 0) {
+            // If no digits after decimal, add two zeros
+            result += '00';
+        }    }
+    return result;
 }
 
 
