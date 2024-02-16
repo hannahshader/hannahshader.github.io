@@ -1,103 +1,53 @@
 /**
  * @Author: Hannah Shader
- * @Date:   2024-02-06 17:22:29
+ * @Date:   2024-02-16 13:33:14
  * @Last Modified by:   Hannah Shader
- * @Last Modified time: 2024-02-06 19:30:34
+ * @Last Modified time: 2024-02-16 14:20:19
  */
+
 body {
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    margin: 0; 
+    font-family: 'Marker Felt', sans-serif;
+    /* I thought I would change the background color, but it ended up looking worse. */
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    align-items: center; 
 }
-
-menu {
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 8px;
-    font-size: 20px;
-    font-family: 'Marker Felt', cursive;
-    color: hsl(313, 48%, 33%);
-    text-decoration: none;
-}
-
-.navbar {
-    background-color: hsl(313, 48%, 33%);
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 
 h1 {
-    font-family: 'Marker Felt', cursive;
-    font-size: 30px;
-    line-height: 1.6;
-    margin: 20px auto;
-    max-width: 600px;
-    color: hsl(313, 48%, 33%);
+    width: 100%;
+    text-align: center; 
 }
 
-h2 {
-    font-family: 'Marker Felt', cursive;
-    font-size: 30px;
-    line-height: 1.6;
-    margin: 5px auto;
-    max-width: 600px;
-    color: hsl(313, 48%, 33%);
-}
 
-p {
-    font-size: 20px;
-    font-family: 'Marker Felt', cursive;
+button {
+    background-color: #d5272f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Marker Felt', sans-serif;
     font-size: 16px;
-    line-height: 1.6;
-    margin: 20px auto;
-    max-width: 600px;
-    color: hsl(313, 48%, 33%);
+    margin: 20px 0; 
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-a {
-    font-size: 20px;
-    font-family: 'Marker Felt', cursive;
-    color: hsl(313, 48%, 33%);
-    text-decoration: none;
+#orderSummary {
+    display: none;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
-label {
-    font-family: 'Marker Felt', cursive;
-    color: hsl(313, 48%, 33%);
-    text-decoration: none;
-}
-
-input {
-    font-family: 'Marker Felt', cursive;
-    color: hsl(313, 48%, 33%);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+#orderSummary p {
+    margin: 10px 0;
 }
 
 .logo {
