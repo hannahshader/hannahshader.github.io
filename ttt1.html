@@ -1,0 +1,55 @@
+<!-- 
+  @Author: Hannah Shader
+  @Date:   2024-02-24 14:04:04
+  @Last Modified by:   Hannah Shader
+  @Last Modified time: 2024-02-27 22:37:08
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      padding: 10px;
+      margin: 0 auto;
+      width: max-content;
+  }
+    
+  .grid-item {
+      border: 2px solid black;
+      padding: 5px;
+      text-align: center;
+      font-size: 4vw;
+      height: 100px; 
+      width: 100px;
+      box-sizing: border-box;
+  }
+
+  .grid-item:hover {
+      background-color: #f0f0f0;
+  }
+</style>
+<title>Tic Tac Toe</title>
+<body>
+
+<div class="grid">
+    <div class="grid-item">X</div>
+    <div class="grid-item">X</div>
+    <div class="grid-item">O</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>  
+</div>
+
+</body>
+</html>

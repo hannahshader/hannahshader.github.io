@@ -1,0 +1,76 @@
+<!-- 
+  @Author: Hannah Shader
+  @Date:   2024-02-26 22:44:26
+  @Last Modified by:   Hannah Shader
+  @Last Modified time: 2024-02-27 23:06:46
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            padding: 10px;
+            margin: 0 auto;
+            width: max-content;
+        }
+          
+        .square {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            font-size: 4vw;
+            height: 100px; 
+            width: 100px;
+            box-sizing: border-box;
+        }
+      
+        .square:hover {
+            background-color: #f0f0f0;
+        }
+
+        .player-turn {
+            border: 2px solid black;
+            text-align: center;
+            box-sizing: border-box;
+            height: 25px;
+            width: 200px;
+            margin-bottom: 5px;
+        }
+
+        .win {
+            border: 2px solid black;
+            text-align: center;
+            box-sizing: border-box;
+            height: 25px;
+            width: 200px;
+        }
+    </style>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1> Shader's Tic Tac Toe Game! </h1>
+    <div class="player-turn"> Player {insert X or O} turn </div>
+    <div class="win"> {insert X or O} Wins </div>
+    <script>
+        document.write("<div class='grid' id='grid-container'>")
+        const NUM_SQUARES = 9;
+        for (i=0; i<NUM_SQUARES; i++){
+            id = "sq"+i;
+            document.write( "<div class='square' id='" + id + "'></div>" );
+        }
+        document.write("</div>")
+    </script>
+</body>
+</html>
