@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href = "products.css"?>
+<products>
+    <product>
+        <name>Hello Kitty</name>
+        <description>Anthropomorphized white cat with a red bow and no visible mouth.</description>
+        <price>35</price>
+        <categories>
+            <category>Sanrio</category>
+            <category>Cute</category>
+        </categories>
+    </product>
+    <product>
+        <name>My Melody</name>
+        <description>White rabbit character depicted as always wearing a bright red or pink hood that covers her ears.</description>
+        <price>30</price>
+        <categories>
+            <category>Sanrio</category>
+            <category>Cute</category>
+        </categories>
+    </product>
+    <product>
+        <name>Kuromi</name>
+        <description>White rabbit character wearing a black jester's hat with a pink skull on the front and a black "devil" tail in the place of a normal rabbit's tail.</description>
+        <price>27</price>
+        <categories>
+            <category>Sanrio</category>
+            <category>Cute</category>
+            <category>My favorite</category>
+        </categories>
+    </product>
+    <product>
+        <name>Unicorno</name>
+        <description>Unicorn character found a hidden magical kingdom.</description>
+        <price>25</price>
+        <categories>
+            <category>Cute</category>
+        </categories>
+    </product>
+    <product>
+        <name>Punkstar</name>
+        <description>Characters that are a band of neighborhood kids that got together to restore an abandoned karaoke machine factory into the ULTIMATE hangout.</description>
+        <price>25</price>
+        <categories>
+            <category>Cute</category>
+            <category>My favorite</category>
+        </categories>
+    </product>
+    <product>
+        <name>Cinnamoroll</name>
+        <description>Character depicted as a white dog with a curly tail that resembles a cinnamon roll, and long ears he can fly with.</description>
+        <price>30</price>
+        <categories>
+            <category>Sanrio</category>
+            <category>Cute</category>
+            <category>My favorite</category>
+        </categories>
+    </product>
+    <product>
+        <name>Gudetama</name>
+        <description>Character that is an anthropomorphized egg yolk whose main trait is laziness.</description>
+        <price>30</price>
+        <categories>
+            <category>Sanrio</category>
+            <category>Cute</category>
+        </categories>
+    </product>
+    <product>
+        <name>Aggressive Retsuko</name>
+        <description>Female red panda character portrayed as an administrative assistant in a Japanese business, relieving the stress of an oppressive and frustrating working life by drinking and singing angry death metal in a karaoke bar.</description>
+        <price>25</price>
+        <categories>
+            <category>Sanrio</category>
+        </categories>
+    </product>
+    <product>
+        <name>Ichigoman</name>
+        <description>Character depicted with strawberry ears and a red superhero suit.</description>
+        <price>25</price>
+        <categories>
+            <category>Sanrio</category>
+        </categories>
+    </product>
+    <product>
+        <name>Keroppi</name>
+        <description>Frog character with large eyes and a V-shaped mouth.</description>
+        <price>30</price>
+        <categories>
+            <category>Sanrio</category>
+            <category>Cute</category>
+            <category>My favorite</category>
+        </categories>
+    </product>
+</products>
