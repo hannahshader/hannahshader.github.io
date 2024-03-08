@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List from JSON</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .product h2, .product p, .product span {
+            margin: 0;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="productList"></div>
+
+    <script>
+        $(document).ready(function() {
+            $.get("https://hannahshader.github.io/products.json", function(data) {
+                var formatted = "";
+                data.products.forEach(function(product) {
+                    formatted += '<div class="product"><h2>' + product.name + '</h2>';
+                    formatted += '<p>' + product.description + '</p>';
+                    formatted += '<span>Price: $' + product.price + '</span><br/>';
+                    formatted += '<span>Categories: ' + product.categories.join(", ") + '</span></div>';
+                });
+                $('#productList').html(formatted);
+            });
+        });
+    </script>
+</body>
+</html>

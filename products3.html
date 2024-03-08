@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character List with Filter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .product h2, .product p, .product span {
+            margin: 0;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <select id="categoryFilter"></select>
+    <button id="filterButton">Filter</button>
+    <div id="filteredProducts"></div>
+
+    <script>
+        $(document).ready(function() {
+            var products = [];
+    
+            $.get("https://hannahshader.github.io/products.json", function(data) {
+                products = data.products;
+                var categories = [];
+                products.forEach(product => {
+                    product.categories.forEach(category => {
+                        if (!categories.includes(category)) {
+                            categories.push(category);
+                        }
+                    });
+                });
+                categories.forEach(category => {
+                    $('#categoryFilter').append($('<option>', {
+                        value: category,
+                        text: category
+                    }));
+                });
+            });
+    
+            $('#filterButton').click(function() {
+                var selectedCategory = $('#categoryFilter').val();
+                var filtered = products.filter(product => product.categories.includes(selectedCategory));
+                var formatted = "";
+                filtered.forEach(function(product) {
+                    formatted += '<div class="product"><h2>' + product.name + '</h2>';
+                    formatted += '<p>' + product.description + '</p>';
+                    formatted += '<span>Price: $' + product.price + '</span><br/>';
+                    formatted += '<span>Categories: ' + product.categories.join(", ") + '</span></div>';
+                });
+                $('#filteredProducts').html(formatted);
+            });
+        });
+    </script>
+</body>
+</html>
