@@ -1,0 +1,64 @@
+{
+    "products": [
+    {
+        "name": "Hello Kitty",
+        "description": "Anthropomorphized white cat with a red bow and no visible mouth.",
+        "price": 35,
+        "categories": ["Sanrio", "Cute"]
+    },
+    {
+        "name": "My Melody",
+        "description": "White rabbit character depicted as always wearing a bright red or pink hood that covers her ears.",
+        "price": 30,
+        "categories": ["Sanrio", "Cute"]
+    },
+    {
+        "name": "Kuromi",
+        "description": "White rabbit character wearing a black jester's hat with a pink skull on the front and a black \"devil\" tail in the place of a normal rabbit's tail.",
+        "price": 27,
+        "categories": ["Sanrio", "Cute", "My favorite"]
+    },
+    {
+        "name": "Unicorno",
+        "description": "Unicorn character found a hidden magical kingdom.",
+        "price": 25,
+        "categories": ["Cute"]
+    },
+    {
+        "name": "Punkstar",
+        "description": "Characters that are a band of neighborhood kids that got together to restore an abandoned karaoke machine factory into the ULTIMATE hangout.",
+        "price": 25,
+        "categories": ["Cute", "My favorite"]
+    },
+    {
+        "name": "Cinnamoroll",
+        "description": "Character depicted as a white dog with a curly tail that resembles a cinnamon roll, and long ears he can fly with.",
+        "price": 30,
+        "categories": ["Sanrio", "Cute", "My favorite"]
+    },
+    {
+        "name": "Gudetama",
+        "description": "Character that is an anthropomorphized egg yolk whose main trait is laziness.",
+        "price": 30,
+        "categories": ["Sanrio", "Cute"]
+    },
+    {
+        "name": "Aggressive Retsuko",
+        "description": "Female red panda character portrayed as an administrative assistant in a Japanese business, relieving the stress of an oppressive and frustrating working life by drinking and singing angry death metal in a karaoke bar.",
+        "price": 25,
+        "categories": ["Sanrio"]
+    },
+    {
+        "name": "Ichigoman",
+        "description": "Character depicted with strawberry ears and a red superhero suit.",
+        "price": 25,
+        "categories": ["Sanrio"]
+    },
+    {
+        "name": "Keroppi",
+        "description": "Frog character with large eyes and a V-shaped mouth.",
+        "price": 30,
+        "categories": ["Sanrio", "Cute", "My favorite"]
+    }   
+    ]
+}
