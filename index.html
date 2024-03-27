@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Api Fun</title>
+</head>
+
+<style>
+</style>
+	
+<script>
+    fetch("https://api.thecatapi.com/v1/images/search")
+            .then(response => response.json())
+            .then(data => {
+                const catURL = data[0].url;
+                const imgElement = document.createElement("img");
+
+                imgElement.src = catURL;
+                imgElement.alt = "cat";
+                
+                document.getElementById('cat').appendChild(imgElement);
+            })
+    
+            .catch(error => console.error('Error:', error));
+</script>
+	
+<body>
+	<div id="cat"></div>
+	<div>
+		<p>Describe the API you selected and what it does:</p>
+        <p>This API returns pictures of cats. Data is returned in a JSON format.</p>
+        <p>Cite the website where you found it:</p>
+        <p>https://thecatapi.com/</p>
+        <p>Describe the options/parameters you used for the API request – i.e., what info did you need to provide (in the query string) to the API to get your results?</p>
+        <p>I simply requested a cat image without any parameters/options set, because I wanted to have the most variety in kinds of cat images I could get. However, if I wanted to, I could speicify breed ID, category, or image type.</p>
+        <p>Give two applications where this API would be helpful.</p>
+        <p>1) It could be used to generate pictures of cats to decorate a personal website for someone passiate about cats. 2) Someone could create a website that generates cat images for stress relief. </p>
+        <p>What were the most challenging and most satisfying things about doing this assignment?</p>
+        <p>Most challenging was understanding how to use the postman website. Most satifying was seeing the API images load, and be different every time.</p>
+
+	</div>
+	
+</body>
+</html>
